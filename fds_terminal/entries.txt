@@ -1,2 +1,0 @@
-A program that checks if a .txt file exists first and compares the contents of the file to a string embedded in the binary.
-Passes the input as a HTTP Host header and sends a connection to that IP address with a specific port, so a server with that specific port should be running first, then the server sends back a network packet with specific bytes. It compares those bytes to a string embedded in the binary.
