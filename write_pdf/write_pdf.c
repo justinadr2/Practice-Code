@@ -14,7 +14,6 @@ int main()
 
     fwrite(data, sizeof(char), sizeof(data), file);
 
-
     fclose(file);
 
 }
