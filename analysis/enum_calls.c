@@ -1,3 +1,5 @@
+//  enumerate all call instructions of an executable file
+
 #include <windows.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,15 +14,9 @@ struct Call
 
 int main() 
 {
-    const char* filename = "D:\\learn\\c\\main.exe"; 
-    HANDLE hFile = CreateFileA(
-        filename,
-        GENERIC_READ,
-        FILE_SHARE_READ,
-        NULL,
-        OPEN_EXISTING,
-        FILE_ATTRIBUTE_NORMAL,
-        NULL
+    const char* filename = "D:\\learn\\main.exe"; 
+    HANDLE hFile = CreateFileA(filename, GENERIC_READ, FILE_SHARE_READ,
+        NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL
     );
 
     if (hFile == INVALID_HANDLE_VALUE) 

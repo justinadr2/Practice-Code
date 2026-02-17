@@ -3,8 +3,6 @@
 #include <ws2tcpip.h>
 #include <stdio.h>
 
-#pragma comment(lib, "ws2_32.lib")
-
 #define PORT "8888"
 #define BUFFER_SIZE 512
 

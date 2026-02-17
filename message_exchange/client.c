@@ -5,8 +5,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#pragma comment(lib, "ws2_32.lib")
-
 #define SERVER_IP "127.0.0.1"
 #define PORT "8888"
 #define BUFFER_SIZE 512

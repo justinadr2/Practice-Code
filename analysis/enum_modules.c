@@ -1,3 +1,5 @@
+// enumerate all modules of a process
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <windows.h>
 #include <tlhelp32.h>
@@ -108,7 +110,7 @@ int main(int argc, char* argv[])
             EnumerateModuleSections(
                 hProcess,
                 me.modBaseAddr,
-                me.szExePath   // FULL MODULE PATH
+                me.szExePath
             );
         } while (Module32NextW(snap, &me));
     }

@@ -1,3 +1,5 @@
+// enumerate current threads of a process
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <windows.h>
 #include <tlhelp32.h>
