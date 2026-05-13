@@ -1,9 +1,8 @@
 #include <windows.h>
 #include <tlhelp32.h>
 #include <stdio.h>
-#include <winternl.h> // For PEB and ProcessBasicInformation
+#include <winternl.h>
 
-// We need to manually link the internal NT function
 typedef NTSTATUS (NTAPI *pNtQueryInformationProcess)(
     HANDLE ProcessHandle,
     PROCESSINFOCLASS ProcessInformationClass,

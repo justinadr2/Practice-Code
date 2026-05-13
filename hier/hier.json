@@ -1,0 +1,42 @@
+{
+  "val": "Artificial Intelligence",
+  "nodes": [
+    {
+      "val": "Symbolic AI (Classical)",
+      "nodes": [
+        { "val": "Rule-Based Systems" },
+        { "val": "Logic Programming" },
+        { "val": "Expert Systems" }
+      ]
+    },
+    {
+      "val": "Machine Learning",
+      "nodes": [
+        {
+          "val": "Supervised Learning",
+          "nodes": [
+            { "val": "Regression" },
+            { "val": "Classification" }
+          ]
+        },
+        { "val": "Unsupervised Learning" },
+        { "val": "Reinforcement Learning" }
+      ]
+    },
+    {
+      "val": "Deep Learning",
+      "nodes": [
+        { "val": "Feed-Forward Neural Networks" },
+        { "val": "Convolutional Neural Networks (CNN)" },
+        { "val": "Recurrent Neural Networks (RNN)" },
+        {
+          "val": "Generative AI",
+          "nodes": [
+            { "val": "Large Language Models (LLMs)" },
+            { "val": "Diffusion Models" }
+          ]
+        }
+      ]
+    }
+  ]
+}
