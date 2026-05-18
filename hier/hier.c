@@ -98,19 +98,6 @@ void PrintTree(Node* root, int depth, int is_last[])
     }
 }
 
-void Init(Node* root, char** vals, int num)
-{
-    root->num_nodes = num;
-    root->nodes = malloc(root->num_nodes * sizeof(Node*));
-    for (int i = 0; i < root->num_nodes; i++)
-    {
-        root->nodes[i] = malloc(sizeof(Node));
-        root->nodes[i]->val = vals[i];
-        root->nodes[i]->nodes = NULL;
-        root->nodes[i]->num_nodes = 0;
-    }
-}
-
 void Free(Node* root)
 {
     if (!root) 
@@ -135,6 +122,7 @@ int main()
 
     char* json_text = ReadJSONFile("hier.json");
 
+    printf("%s\n", json_text);
     cJSON* root_json = cJSON_Parse(json_text);
 
     Node* root = ParseJSONToNode(root_json);
