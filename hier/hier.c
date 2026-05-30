@@ -121,8 +121,7 @@ int main()
     system("chcp 65001 > nul");
 
     char* json_text = ReadJSONFile("hier.json");
-
-    printf("%s\n", json_text);
+    
     cJSON* root_json = cJSON_Parse(json_text);
 
     Node* root = ParseJSONToNode(root_json);
